@@ -1,0 +1,121 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Zain:ital,wght@0,200;0,300;0,400;0,700;0,800;0,900;1,300;1,400&display=swap');
+*{
+    font-family: "Zain", serif;
+}
+/* تنسيقات الهيدر */
+.header {
+    background-color: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.header__title {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+    line-height: 1.6;
+}
+
+/* جعل النص متجاوبًا */
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 1.2rem;
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .header__title {
+        font-size: 1rem;
+    }
+}
+
+.pricing {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	width: 100%;
+	margin: 0 auto 3em;
+}
+
+.pricing__item {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+	text-align: center;
+	flex: 0 1 330px;
+}
+
+.pricing__feature-list {
+	text-align: left;
+}
+
+.pricing__action {
+	color: inherit;
+	border: none;
+	background: none;
+}
+
+.pricing__action:focus {
+	outline: none;
+}
+
+.pricing--sonam .pricing__item {
+	margin: 1.5em;
+	padding: 2em;
+	cursor: default;
+	border-radius: 10px;
+	background: #1F1F1F;
+	box-shadow: 0 5px 20px rgba(0,0,0,0.05), 0 15px 30px -10px rgba(0,0,0,0.3);
+	transition: background 0.3s;
+    color: #fff;
+}
+
+.pricing--sonam .pricing__item:hover {
+	background: #141315;
+}
+
+.pricing--sonam .pricing__title {
+	font-size: 2em;
+	width: 100%;
+	margin: 0 0 0.25em;
+	padding: 0 0 0.5em;
+	border-bottom: 3px solid #fa0202;
+    color: #fff;
+}
+
+.pricing--sonam .pricing__price {
+	color: #fa0202;
+	font-size: 1.75em;
+	padding: 1em 0 0.75em;
+}
+
+.pricing--sonam .pricing__sentence {
+	font-weight: bold;
+}
+
+.pricing--sonam .pricing__feature-list {
+	margin: 0;
+	padding: 1em 1.25em 2em;
+}
+
+.pricing--sonam .pricing__action {
+	font-weight: bold;
+	margin-top: auto;
+	padding: 0.75em 2em;
+	border-radius: 5px;
+	background: #fa0202;
+	transition: background 0.3s;
+}
+.pricing--sonam .pricing__action a{
+    text-decoration: none;
+    color: #fff;
+}
+
+.pricing--sonam .pricing__action:hover,
+.pricing--sonam .pricing__action:focus {
+	background: #BD3C3C;
+}
