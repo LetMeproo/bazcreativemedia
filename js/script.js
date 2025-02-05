@@ -1225,3 +1225,19 @@
 		}
 	});
 }());
+
+
+
+//-----------
+
+document.addEventListener("DOMContentLoaded", function() {
+    const whatsappButton = document.querySelector('.whatsapp-float');
+
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 100) { // يظهر الزر بعد التمرير لـ 100 بكسل
+            whatsappButton.classList.remove('hide');
+        } else {
+            whatsappButton.classList.add('hide');
+        }
+    });
+});
